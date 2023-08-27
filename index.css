@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 3000px;
+    width: 100%;
+    color: #FFD700;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* navigatio bar */
+.nav{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFD700;
+}
+.logo{
+    font-size: 26px;
+    color: #FFD700;
+    margin-left: 130px;
+    cursor: pointer;
+}
+.nav-rest{
+    display: flex;
+     gap: 30px;
+     text-decoration: none;
+         margin-right: 100px;
+         font-weight: 500;
+         font-size: 20px;
+}
+.nav-rest a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFD700;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in ;
+    
+}
+.nav-rest a:hover{
+    border-bottom: 3px solid purple;
+    transition: 0.3s ease-in;
+}
+/* Home section */
+
+#Hero {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+.text
+{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+  justify-content: center;
+    flex-direction: column; 
+}
+.text h1{
+    position: relative;
+    font-size: 70px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 110px;
+}
+.text h1:hover{
+    color: rgb(93, 6, 93);
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+.text h2{
+    position: relative;
+   
+    margin-left: 130px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.text h1, .text h2, .text span {
+    opacity: 0; 
+    transform: translateY(20px); 
+}
+
+.text h1 {
+    animation: animateH1 0.8s forwards; 
+}
+
+.text h2 {
+    animation: animateH2 1s forwards; /* Apply the animation with a 1-second duration and delay */
+    animation-delay: 1s; /* Delay the animation by 1 second */
+}
+
+.text span {
+    animation: animateSpan 1s forwards; /* Apply the animation with a 1-second duration and delay */
+    animation-delay: 2s; /* Delay the animation by 2 seconds */
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 380px;
+}
+.icon a{
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 40px;
+    color: #FFD700;
+    text-decoration: none;
+}
+.icon a:hover{
+    color: rgb(111, 2, 111);
+    transition: 0.5 ease-in;
+}
+
+@keyframes animateH1 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateH2 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateSpan {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.photo{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.photo img{
+height: 400px;
+width: 320px;
+position: relative;
+bottom: 40px;
+right: 50px;
+border: 4px solid purple;
+border-radius: 50%;
+}
+/* ABOUT ME */
+#myself{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    overflow: hidden;
+}
+
+#myself .txt1{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.txt1 h1{
+    font-size: 40px;
+    text-decoration: wavy;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 480px;
+    letter-spacing: 1.2px;
+}
+.txt1 h1:hover{
+    color: purple;
+    transition: 0.5s ease-in;
+}
+.txt1 p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    letter-spacing: 1px;
+}
+/* myself photo */
+#myself .ph1{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ph1 img{
+    height:400px ;
+    width: 320px;
+    border: 4px solid purple;
+    border-radius: 10%;
+}
+#skill{
+    height: 60vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+.bars{
+    height: 100%;
+    width: 55%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.bar-name{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bars h2{
+    margin-right: 300px;
+    margin-bottom: 30px;
+}
+.bar-box{
+    height: 10px;
+    width: 400px;
+    background-color: silver;
+}
+.bar-per{
+    height: 10px;
+    background-color: blueviolet;
+}
+
+/* Project section */
+#project{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(190, 29, 29);
+    display: flex;
+    overflow: hidden;
+}
