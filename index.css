@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 html, body{
-    height: 100%;
-    width: 100%;
+
     color: #FFD700;
     scroll-behavior: smooth;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif fantasy;
@@ -66,36 +65,36 @@ html, body{
     height: 90vh;
     width: 100%;
     display: flex;
+    background-color: black;
    
 }
 .text
 {
     width: 50%;
     height: 100%;
-    background-color: black;
     display: flex;
   justify-content: center;
     flex-direction: column;
     padding-top: 200px;
 }
 .text h1{
-    position: relative;
     font-size: 70px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    margin-left: 110px;
-   color: dodgerblue;
+   color: white;
 }
 .text h1:hover{
-    color: #FFD700;
     transition: s ease-in;
     cursor: pointer;
 }
 .text h2{
     position: relative;
-   
+   color: white;
     margin-left: 130px;
     font-size: 40px;
     cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 2px;
 }
 .text h1, .text h2, .text span {
     opacity: 0; 
@@ -152,7 +151,6 @@ html, body{
 .photo{
     height: 100%;
     width: 50%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +168,7 @@ right: 50px;
 border: 4px solid dodgerblue;
 border-radius: 50%;
 }
-/* ABOUT ME */
+/* ABOUT ME -------------------------*/
 #myself{
     height: 60vh;
     width: 100%;
@@ -178,6 +176,7 @@ border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #myself .txt1{
@@ -199,19 +198,11 @@ border-radius: 50%;
    
     letter-spacing: 1.2px;
 }
-.txt1 h1 span{
-   color: dodgerblue;
-}
-.txt1 h1:hover{
-    color: #7B68EE;
-    transition: 0.5s ease-in;
-}
 .txt1 p{
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Courier New', Courier, monospace;
-  
-    letter-spacing: 1px;
-    color: dodgerblue;
+    letter-spacing: 0.6px;
+    color: white;
     text-align: inherit;
     padding-right: 140px;
 }
@@ -250,6 +241,7 @@ border-radius: 50%;
     text-transform: uppercase;
 }
 .bar-name{
+    color: white;
     font-size: 20px;
     margin: 10px 0;
 }
@@ -352,13 +344,13 @@ justify-content: center;
 #Services{
     height: 65vh;
     width: 100%;
-    background-color: rgb(122, 108, 98);
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #Services .head {
-    height: 20%;
+    height: 13vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -369,11 +361,8 @@ justify-content: center;
     font-size: 40px;
     font-weight: 600;
 }
-.head p span{
-    color: #7B68EE;
-}
 #Services .body{
-    height: 80%;
+    height: 52vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -425,9 +414,10 @@ justify-content: center;
     justify-content: center;
     padding: 5% 5%;
     text-align: center;
-    color: dodgerblue;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
+/* contact section---------------------------- */
 #Contact{
     height: 45vh;
     width: 100%;
@@ -448,9 +438,6 @@ justify-content: center;
     font-size: 40px;
     font-weight: 700;
 
-}
-#Contact h2 span{
-    color: dodgerblue;
 }
 #Contact .second-part{
     height: 80%;
@@ -482,6 +469,10 @@ justify-content: center;
     color: dodgerblue;
     align-items: center;
 }
+.second-part h2{
+    color: white;
+    letter-spacing: 1px;
+}
 #Contact .main{
     width: 100%;
     height: 100%;
@@ -498,6 +489,10 @@ justify-content: center;
 #Contact .third-part img{
     height: 30px;
     width: 30px;
+}
+.third-part h2{
+    color: white;
+    letter-spacing: 1.4px;
 }
 #Contact .third-part a{
     text-decoration: none;
@@ -516,41 +511,5 @@ justify-content: center;
     font-weight: 10;
     color: #B2BEB5;
 }
-  /* Responsive---------------------------------------------------------------------
-  ----------------------------------------------------------------------
-  ---------------------------------------------- */
-  body .nav i{
-    display: none;
-  }
-  @media (max-width: 500px) {
-    
-    /* navigation section................................
-    ....................................
-    ................................................ */
-      .nav{
-        width: 100%;
-        height: 70px;
-      }
-      .nav .logo{
-        margin-left: 40px;
-        font-size: 40px;
-      }
-    body .nav i{
-        font-size: 40px;
-        display: block;
-         margin-right: 20px;
-    }
-    .nav .nav-rest{
-        display: none;
-    }
-    /* Hero section------------------------ */
-    main{
-       
+  
 
-    }
-    #Hero{
-        width: 1000px;
-        height: auto 0;
-    }
-
-}
